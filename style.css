@@ -1,0 +1,103 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+     height: 100vh;
+ 
+     overflow-x: hidden;
+     overflow-y: auto;
+     perspective: 10px;
+}
+.container{
+    height: 100%;
+ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-45px) scale(6);
+}
+.forground{
+    transform: translateZ(-25px) scale(3.5);
+}
+ 
+.forground , .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.heading{
+    position: absolute;
+    top: 15%;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    Color:rgb(255, 255, 255);
+    font-size:  150px;
+    line-height: normal;
+    letter-spacing: 4PX;
+    text-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+section{
+    background-color:rgb(45,45,45);
+    color: white;
+    /* padding:0 8rem; */
+    padding: 4rem 0;
+}
+.SecndHeading{
+    font-size: 5.4rem;
+    font-family: "Poppins", sans-serif;
+    line-height: normal;
+    letter-spacing: 4px;
+    /* padding: 2rem 5rem;
+    padding-top: 4rem; */
+    padding: 0 10rem;
+     
+}
+.text{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    /* padding: 0 5rem;
+    margin: 2rem 0; */
+    margin: 5rem 0;
+    padding: 0 10rem;
+}
+.bg1{
+    background-image: url(assets/sport-1.jpg);
+}
+.bg2{
+    background-image: url(assets/sport-2.jpg);
+}
+.bg3{
+    background-image: url(assets/sport-3.jpg);
+}
+.bg{
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 450px; 
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.desc{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: white;
+    padding: 0.8rem 2.5rem ;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight:700;
+    font-size: 3.4rem;
+}
